@@ -6,6 +6,7 @@ Changes in 0.4.12:
 
 * Bugfix: progress percentage when opening many files
 * Bugfix: progress window can be closed
+* Bugfix: type always shows "Value" for primitive types
 
 Changes in 0.4.10:
 
