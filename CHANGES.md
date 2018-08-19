@@ -5,6 +5,7 @@ For HugeJsonViewer, available from https://github.com/WelliSolutions/HugeJsonVie
 Changes in 0.4.12:
 
 * Bugfix: progress percentage when opening many files
+* Bugfix: progress window can be closed
 
 Changes in 0.4.10:
 
