@@ -18,6 +18,6 @@ Inspired by a [Question on Software Recommendations](http://softwarerecs.stackex
 
 UI with tabs and filtering capability:
 
-![Screenshot](hugejsonviewer.png)
+![Screenshot of the app with a large JSON file](screenshot-largefile.png)
 
-![Screenshot](hugejsonviewer-1.png)
+![Screenshot of the app with small JSON files](screenshot-smallfiles.png)
