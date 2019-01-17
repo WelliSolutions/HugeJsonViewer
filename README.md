@@ -10,9 +10,9 @@ Inspired by a [Question on Software Recommendations](http://softwarerecs.stackex
 
 ## Releases
 
-[Huge JSON Viewer 0.4.12.19 Setup.exe.zip](http://development.wellisolutions.de/wp-content/uploads/2016/07/Huge-JSON-Viewer-0.4.12.19-Setup.exe_.zip) (13.8 MB)
+[Huge JSON Viewer 0.4.12.19 Setup.exe.zip](http://wellisolutions.de/downloads/Huge-JSON-Viewer-0.4.12.19-Setup.exe_.zip) (13.8 MB)
 
-[Huge JSON Viewer 0.4.12.19 Portable.zip](http://development.wellisolutions.de/wp-content/uploads/2016/07/Huge-JSON-Viewer-0.4.12.19-Portable.zip) (17.4 MB)
+[Huge JSON Viewer 0.4.12.19 Portable.zip](http://wellisolutions.de/downloads/Huge-JSON-Viewer-0.4.12.19-Portable.zip) (17.4 MB)
 
 ## Screenshots
 
