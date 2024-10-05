@@ -17,4 +17,7 @@
   <data name="progressPanel1.Description" xml:space="preserve">
     <value>Bitte warten...</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Fortschritt</value>
+  </data>
 </root>

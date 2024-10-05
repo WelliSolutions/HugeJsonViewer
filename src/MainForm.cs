@@ -140,5 +140,15 @@ namespace HugeJSONViewer
         {
             MessageBox.Show(this, message, Resources.ErrorLoadingJson, MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this, Resources.AboutMessage, Resources.AboutTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

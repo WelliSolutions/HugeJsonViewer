@@ -61,6 +61,24 @@ namespace HugeJSONViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Icons: https://icons8.com.
+        /// </summary>
+        internal static string AboutMessage {
+            get {
+                return ResourceManager.GetString("AboutMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string AboutTitle {
+            get {
+                return ResourceManager.GetString("AboutTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Converting into display data.
         /// </summary>
         internal static string ConvertingJsonCaption {

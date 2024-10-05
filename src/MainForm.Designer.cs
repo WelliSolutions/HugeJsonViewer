@@ -36,6 +36,9 @@ namespace HugeJSONViewer
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuFileExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.jsonTabs)).BeginInit();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
@@ -54,22 +57,43 @@ namespace HugeJSONViewer
             // mnuMain
             // 
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuFile});
+            this.mnuFile,
+            this.mnuHelp});
             resources.ApplyResources(this.mnuMain, "mnuMain");
             this.mnuMain.Name = "mnuMain";
             // 
             // mnuFile
             // 
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuFileOpen});
+            this.mnuFileOpen,
+            this.mnuFileExit});
             this.mnuFile.Name = "mnuFile";
             resources.ApplyResources(this.mnuFile, "mnuFile");
             // 
             // mnuFileOpen
             // 
-            this.mnuFileOpen.Name = "mnuFileOpen";
             resources.ApplyResources(this.mnuFileOpen, "mnuFileOpen");
+            this.mnuFileOpen.Name = "mnuFileOpen";
             this.mnuFileOpen.Click += new System.EventHandler(this.mnuFileOpen_Click);
+            // 
+            // mnuFileExit
+            // 
+            resources.ApplyResources(this.mnuFileExit, "mnuFileExit");
+            this.mnuFileExit.Name = "mnuFileExit";
+            this.mnuFileExit.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // mnuHelp
+            // 
+            this.mnuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuHelpAbout});
+            this.mnuHelp.Name = "mnuHelp";
+            resources.ApplyResources(this.mnuHelp, "mnuHelp");
+            // 
+            // mnuHelpAbout
+            // 
+            resources.ApplyResources(this.mnuHelpAbout, "mnuHelpAbout");
+            this.mnuHelpAbout.Name = "mnuHelpAbout";
+            this.mnuHelpAbout.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -93,6 +117,9 @@ namespace HugeJSONViewer
         private System.Windows.Forms.MenuStrip mnuMain;
         private System.Windows.Forms.ToolStripMenuItem mnuFile;
         private System.Windows.Forms.ToolStripMenuItem mnuFileOpen;
+        private System.Windows.Forms.ToolStripMenuItem mnuFileExit;
+        private System.Windows.Forms.ToolStripMenuItem mnuHelp;
+        private System.Windows.Forms.ToolStripMenuItem mnuHelpAbout;
     }
 }
 

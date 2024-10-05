@@ -189,4 +189,14 @@ Continue anyway?</value>
     <value>{0:0.000} MB</value>
     <comment>0: GB value</comment>
   </data>
+  <data name="AboutMessage" xml:space="preserve">
+    <value>Huge JSON Viewer
+Program to view large JSON files.
+
+Source code: https://github.com/WelliSolutions/HugeJsonViewer
+Icons: https://tabler-icons.io/</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
 </root>

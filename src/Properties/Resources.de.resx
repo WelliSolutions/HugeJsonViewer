@@ -73,4 +73,14 @@ Trotzdem fortfahren?</value>
   <data name="StreamingProgress" xml:space="preserve">
     <value>{0} / {1}</value>
   </data>
+  <data name="AboutMessage" xml:space="preserve">
+    <value>Huge JSON Viewer
+Programm zur Ansicht riesiger JSON Dateien.
+
+Quellcode: https://github.com/WelliSolutions/HugeJsonViewer
+Icons: https://tabler-icons.io/</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Über</value>
+  </data>
 </root>
