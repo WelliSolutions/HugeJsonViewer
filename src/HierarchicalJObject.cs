@@ -6,7 +6,7 @@ namespace HugeJSONViewer
 {
     public class HierarchicalJObject
     {
-        private static int _currentParentId;
+        private static int _totalObjectCount;
         private JToken _jToken;
         private readonly IList<HierarchicalJObject> _dataSource;
         private readonly int _id;
@@ -18,7 +18,7 @@ namespace HugeJSONViewer
 
         internal HierarchicalJObject(IList<HierarchicalJObject> dataSource)
         {
-            _id = Interlocked.Increment(ref _currentParentId);
+            _id = Interlocked.Increment(ref _totalObjectCount);
             _dataSource = dataSource;
         }
 
@@ -35,7 +35,12 @@ namespace HugeJSONViewer
             }
         }
 
-        public int ParentID { get; set; }
+        public int ParentID {
+            // ReSharper disable once UnusedMember.Global
+            // Justification: used by DevExpress via reflection
+            get;
+            set;
+        }
 
         public JToken Token
         {
