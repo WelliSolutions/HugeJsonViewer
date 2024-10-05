@@ -39,7 +39,7 @@ namespace HugeJSONViewer
 
         public JToken Token
         {
-            get { return _jToken; }
+            get => _jToken;
             set
             {
                 _jToken = value;
@@ -48,6 +48,7 @@ namespace HugeJSONViewer
         }
 
         // ReSharper disable once UnusedMember.Global
+        // Justification: used by DevExpress via reflection
         public string Path
         {
             get
@@ -58,6 +59,7 @@ namespace HugeJSONViewer
         }
 
         // ReSharper disable once UnusedMember.Global
+        // Justification: used by DevExpress via reflection
         public string Value => Token switch
         {
             JObject _ => "{} Object",
@@ -73,43 +75,31 @@ namespace HugeJSONViewer
             _ => Token.GetType().ToString()
         };
 
-        private void Wrap(HierarchicalJObject h)
+        private void Wrap(HierarchicalJObject parent)
         {
-            foreach (var child in h.Token.Children())
+            void AddChild(JToken childToken)
             {
+                var child = new HierarchicalJObject(_dataSource)
+                {
+                    ParentID = parent.ID,
+                    Token = childToken,
+                };
+                _dataSource.Add(child);
+            }
 
-                //if (!(child is JObject)) continue;
-                if (child is JProperty jProperty)
+            foreach (var child in parent.Token.Children())
+            {
+                switch (child)
                 {
-                    if (jProperty.Value is JContainer)
-                    {
-                        var jValue = (JContainer) jProperty.Value;
-                        var hChild = new HierarchicalJObject(_dataSource)
-                        {
-                            ParentID = h.ID,
-                            Token = jValue,
-                        };
-                        _dataSource.Add(hChild);
-                    }
-                    else
-                    {
-                        var jValue = jProperty.Value;
-                        var hChild = new HierarchicalJObject(_dataSource)
-                        {
-                            ParentID = h.ID,
-                            Token = jValue,
-                        };
-                        _dataSource.Add(hChild);
-                    }
-                }
-                else if (child is JObject)
-                {
-                    var hChild = new HierarchicalJObject(_dataSource)
-                    {
-                        ParentID = h.ID,
-                        Token = (JContainer) child,
-                    };
-                    _dataSource.Add(hChild);
+                    case JProperty { Value: JContainer jContainer }:
+                        AddChild(jContainer);
+                        break;
+                    case JProperty jProperty:
+                        AddChild(jProperty.Value);
+                        break;
+                    case JObject jObject:
+                        AddChild(jObject);
+                        break;
                 }
             }
         }
