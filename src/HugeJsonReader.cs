@@ -55,9 +55,8 @@ namespace HugeJSONViewer
             var physicalRam = new ComputerInfo().TotalPhysicalMemory - (ulong) RESERVED_MEMORY_FOR_OS;
             if (estimatedRequiredRam > physicalRam)
             {
-                string gbSize = file.Length.BytesToGB().ToString("0.00");
                 var answer = MessageBox.Show(
-                    string.Format(Resources.FileTooLargeWarning, gbSize),
+                    string.Format(Resources.FileTooLargeWarning, HumanReadable.FileSize(file.Length)),
                     "Performance warning",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning,
