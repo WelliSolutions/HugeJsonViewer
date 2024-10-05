@@ -64,7 +64,37 @@ namespace HugeJSONViewer
         }
 
         // ReSharper disable once UnusedMember.Global
-        public string Value => DisplayHelper.FormatToken(this);
+        public string Value
+        {
+            get
+            {
+                if (Object is JObject) return "{} Object";
+                if (Object is JProperty) return "Property";
+
+                if (Object is JArray)
+                {
+                    var array = (JArray)Object;
+                    return  "[], size " + array.Count;
+                }
+
+                if (Object is JValue)
+                {
+                    var jValue = (JValue)Object;
+                    if (jValue.Type == JTokenType.String)
+                    {
+                        string s = (string) jValue.Value;
+                        if (s.Length <= 16)
+                        {
+                            return jValue.Type + " = " + jValue.Value;
+                        }
+                        return jValue.Type + " = " + s.Substring(0,16)+ " ...";
+                    }
+                    return jValue.Type +" = "+  jValue.Value;
+                }
+
+                return Object.GetType().ToString();
+            }
+        }
 
         private void Wrap(HierarchicalJObject h)
         {

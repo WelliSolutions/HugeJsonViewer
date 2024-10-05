@@ -66,7 +66,7 @@ namespace HugeJSONViewer
 
                 var jsonViewer = AddNewTab(file.Value.Name);
                 jsonViewer.JsonFile = file.Value;
-                jsonViewer.ParseTime = DisplayHelper.HumanReadable(json.Value.ElapsedMilliseconds);
+                jsonViewer.ParseTime = HumanReadable.Time(json.Value.ElapsedMilliseconds);
                 _progress.Caption = "Displaying";
                 jsonViewer.TreeViewData = dataSource;
                 jsonViewer.treeJsonTree.RootValue = h.ID;

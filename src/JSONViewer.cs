@@ -42,7 +42,7 @@ namespace HugeJSONViewer
                 ResumeLayout(true);
                 stopwatch.Stop();
                 var parseTimeMilliseconds = stopwatch.ElapsedMilliseconds;
-                txtDisplayTime.Text = DisplayHelper.HumanReadable(parseTimeMilliseconds);
+                txtDisplayTime.Text = HumanReadable.Time(parseTimeMilliseconds);
             }
         }
 
@@ -61,7 +61,7 @@ namespace HugeJSONViewer
             {
                 _jsonFile = value;
                 txtFileName.Text = value.Name;
-                txtFileSize.Text = DisplayHelper.FileSize(value.Length);
+                txtFileSize.Text = HumanReadable.FileSize(value.Length);
             }
         }
 

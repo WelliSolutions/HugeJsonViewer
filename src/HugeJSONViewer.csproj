@@ -55,7 +55,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DisplayHelper.cs" />
+    <Compile Include="HumanReadable.cs" />
     <Compile Include="ErrorInfo.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Hacks\ProgressStream.cs" />
