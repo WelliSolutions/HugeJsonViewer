@@ -1,0 +1,26 @@
+﻿<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuFileOpen.Text" xml:space="preserve">
+    <value>Ö&amp;ffne JSON Datei...</value>
+  </data>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>&amp;Datei</value>
+  </data>
+  <data name="openJsonFile.Filter" xml:space="preserve">
+    <value>JSON Datei|*.json</value>
+  </data>
+  <data name="openJsonFile.Title" xml:space="preserve">
+    <value>Öffne JSON Datei</value>
+  </data>
+</root>

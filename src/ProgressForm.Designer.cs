@@ -34,36 +34,26 @@
             // 
             // progressPanel1
             // 
-            this.progressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.progressPanel1.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("progressPanel1.Appearance.BackColor")));
             this.progressPanel1.Appearance.Options.UseBackColor = true;
-            this.progressPanel1.Caption = "Loading JSON";
-            this.progressPanel1.Description = "Please wait...";
-            this.progressPanel1.Location = new System.Drawing.Point(12, 29);
+            resources.ApplyResources(this.progressPanel1, "progressPanel1");
             this.progressPanel1.LookAndFeel.SkinMaskColor = System.Drawing.Color.Red;
             this.progressPanel1.LookAndFeel.SkinName = "Office 2010 Black";
             this.progressPanel1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.progressPanel1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.progressPanel1.LookAndFeel.UseWindowsXPTheme = true;
             this.progressPanel1.Name = "progressPanel1";
-            this.progressPanel1.Size = new System.Drawing.Size(251, 66);
-            this.progressPanel1.TabIndex = 2;
-            this.progressPanel1.Text = "progressPanel1";
             // 
             // ProgressForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 132);
             this.ControlBox = false;
             this.Controls.Add(this.progressPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(291, 170);
             this.Name = "ProgressForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Progress information";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnClose);
             this.ResumeLayout(false);
 

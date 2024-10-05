@@ -1,5 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -58,4 +117,1021 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="treeListColumn1.Caption" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="treeListColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="treeListColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="treeListColumn2.Caption" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="treeListColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="treeListColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="treeJsonTree.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="treeJsonTree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 41</value>
+  </data>
+  <data name="treeJsonTree.RootValue" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="treeJsonTree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>909, 436</value>
+  </data>
+  <data name="treeJsonTree.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;treeJsonTree.Name" xml:space="preserve">
+    <value>treeJsonTree</value>
+  </data>
+  <data name="&gt;&gt;treeJsonTree.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.TreeList, DevExpress.XtraTreeList.v15.2, Version=15.2.20.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;treeJsonTree.Parent" xml:space="preserve">
+    <value>splitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;treeJsonTree.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Expand level</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmbExpandLevel.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmbExpandLevel.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbExpandLevel.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbExpandLevel.Items3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmbExpandLevel.Items4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmbExpandLevel.Items5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbExpandLevel.Items6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmbExpandLevel.Items7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmbExpandLevel.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cmbExpandLevel.Items9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cmbExpandLevel.Items10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmbExpandLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 10</value>
+  </data>
+  <data name="cmbExpandLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 21</value>
+  </data>
+  <data name="cmbExpandLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmbExpandLevel.Name" xml:space="preserve">
+    <value>cmbExpandLevel</value>
+  </data>
+  <data name="&gt;&gt;cmbExpandLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbExpandLevel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cmbExpandLevel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>909, 41</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>splitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel1.Name" xml:space="preserve">
+    <value>splitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel1.Parent" xml:space="preserve">
+    <value>splitter</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtArrayData.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txtArrayData.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtArrayData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 439</value>
+  </data>
+  <data name="txtArrayData.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtArrayData.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="txtArrayData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 38</value>
+  </data>
+  <data name="txtArrayData.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtArrayData.Name" xml:space="preserve">
+    <value>txtArrayData</value>
+  </data>
+  <data name="&gt;&gt;txtArrayData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtArrayData.Parent" xml:space="preserve">
+    <value>splitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;txtArrayData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblArrayData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblArrayData.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lblArrayData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 426</value>
+  </data>
+  <data name="lblArrayData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="lblArrayData.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblArrayData.Text" xml:space="preserve">
+    <value>Array data:</value>
+  </data>
+  <data name="&gt;&gt;lblArrayData.Name" xml:space="preserve">
+    <value>lblArrayData</value>
+  </data>
+  <data name="&gt;&gt;lblArrayData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblArrayData.Parent" xml:space="preserve">
+    <value>splitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblArrayData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="propJsonProperties.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="propJsonProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 275</value>
+  </data>
+  <data name="propJsonProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 151</value>
+  </data>
+  <data name="propJsonProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;propJsonProperties.Name" xml:space="preserve">
+    <value>propJsonProperties</value>
+  </data>
+  <data name="&gt;&gt;propJsonProperties.Type" xml:space="preserve">
+    <value>DevExpress.XtraVerticalGrid.PropertyGridControl, DevExpress.XtraVerticalGrid.v15.2, Version=15.2.20.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;propJsonProperties.Parent" xml:space="preserve">
+    <value>splitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;propJsonProperties.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblProperties.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblProperties.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lblProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 262</value>
+  </data>
+  <data name="lblProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 13</value>
+  </data>
+  <data name="lblProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblProperties.Text" xml:space="preserve">
+    <value>Properties of selected node</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.Name" xml:space="preserve">
+    <value>lblProperties</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.Parent" xml:space="preserve">
+    <value>splitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblBool.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblBool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 204</value>
+  </data>
+  <data name="lblBool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="lblBool.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblBool.Text" xml:space="preserve">
+    <value>Bool</value>
+  </data>
+  <data name="lblBool.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblBool.Name" xml:space="preserve">
+    <value>lblBool</value>
+  </data>
+  <data name="&gt;&gt;lblBool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBool.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblBool.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNodeCountBool.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtNodeCountBool.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNodeCountBool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 201</value>
+  </data>
+  <data name="txtNodeCountBool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="txtNodeCountBool.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="txtNodeCountBool.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountBool.Name" xml:space="preserve">
+    <value>txtNodeCountBool</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountBool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountBool.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountBool.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtString.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtString.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 178</value>
+  </data>
+  <data name="txtString.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="txtString.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="txtString.Text" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="txtString.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;txtString.Name" xml:space="preserve">
+    <value>txtString</value>
+  </data>
+  <data name="&gt;&gt;txtString.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtString.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtString.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtNodeCountString.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtNodeCountString.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNodeCountString.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 175</value>
+  </data>
+  <data name="txtNodeCountString.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="txtNodeCountString.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="txtNodeCountString.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountString.Name" xml:space="preserve">
+    <value>txtNodeCountString</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountString.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountString.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountString.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblFloat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblFloat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 152</value>
+  </data>
+  <data name="lblFloat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="lblFloat.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblFloat.Text" xml:space="preserve">
+    <value>Float</value>
+  </data>
+  <data name="lblFloat.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblFloat.Name" xml:space="preserve">
+    <value>lblFloat</value>
+  </data>
+  <data name="&gt;&gt;lblFloat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFloat.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblFloat.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtNodeCountFloat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtNodeCountFloat.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNodeCountFloat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 149</value>
+  </data>
+  <data name="txtNodeCountFloat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="txtNodeCountFloat.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="txtNodeCountFloat.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountFloat.Name" xml:space="preserve">
+    <value>txtNodeCountFloat</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountFloat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountFloat.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountFloat.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblInt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblInt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 204</value>
+  </data>
+  <data name="lblInt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lblInt.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblInt.Text" xml:space="preserve">
+    <value>Int</value>
+  </data>
+  <data name="lblInt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblInt.Name" xml:space="preserve">
+    <value>lblInt</value>
+  </data>
+  <data name="&gt;&gt;lblInt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInt.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblInt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtNodeCountInt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtNodeCountInt.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNodeCountInt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 201</value>
+  </data>
+  <data name="txtNodeCountInt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="txtNodeCountInt.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="txtNodeCountInt.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountInt.Name" xml:space="preserve">
+    <value>txtNodeCountInt</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountInt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountInt.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountInt.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblArray.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblArray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 178</value>
+  </data>
+  <data name="lblArray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lblArray.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblArray.Text" xml:space="preserve">
+    <value>Array</value>
+  </data>
+  <data name="lblArray.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblArray.Name" xml:space="preserve">
+    <value>lblArray</value>
+  </data>
+  <data name="&gt;&gt;lblArray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblArray.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblArray.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtNodeCountArray.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtNodeCountArray.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNodeCountArray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 175</value>
+  </data>
+  <data name="txtNodeCountArray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="txtNodeCountArray.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="txtNodeCountArray.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountArray.Name" xml:space="preserve">
+    <value>txtNodeCountArray</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountArray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountArray.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountArray.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblObject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblObject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 152</value>
+  </data>
+  <data name="lblObject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblObject.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblObject.Text" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="lblObject.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblObject.Name" xml:space="preserve">
+    <value>lblObject</value>
+  </data>
+  <data name="&gt;&gt;lblObject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblObject.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblObject.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtNodeCountObject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtNodeCountObject.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNodeCountObject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 149</value>
+  </data>
+  <data name="txtNodeCountObject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="txtNodeCountObject.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="txtNodeCountObject.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountObject.Name" xml:space="preserve">
+    <value>txtNodeCountObject</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountObject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountObject.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCountObject.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblNodeCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNodeCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 126</value>
+  </data>
+  <data name="lblNodeCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="lblNodeCount.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblNodeCount.Text" xml:space="preserve">
+    <value>Node count</value>
+  </data>
+  <data name="&gt;&gt;lblNodeCount.Name" xml:space="preserve">
+    <value>lblNodeCount</value>
+  </data>
+  <data name="&gt;&gt;lblNodeCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNodeCount.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblNodeCount.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtNodeCount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtNodeCount.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNodeCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 123</value>
+  </data>
+  <data name="txtNodeCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="txtNodeCount.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtNodeCount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCount.Name" xml:space="preserve">
+    <value>txtNodeCount</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCount.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtNodeCount.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtDisplayTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtDisplayTime.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtDisplayTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 97</value>
+  </data>
+  <data name="txtDisplayTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="txtDisplayTime.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtDisplayTime.Text" xml:space="preserve">
+    <value>00:00.000 min</value>
+  </data>
+  <data name="&gt;&gt;txtDisplayTime.Name" xml:space="preserve">
+    <value>txtDisplayTime</value>
+  </data>
+  <data name="&gt;&gt;txtDisplayTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDisplayTime.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtDisplayTime.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblDisplayTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDisplayTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 100</value>
+  </data>
+  <data name="lblDisplayTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="lblDisplayTime.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblDisplayTime.Text" xml:space="preserve">
+    <value>Display time</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayTime.Name" xml:space="preserve">
+    <value>lblDisplayTime</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayTime.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayTime.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txtParseTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtParseTime.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtParseTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 71</value>
+  </data>
+  <data name="txtParseTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="txtParseTime.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="txtParseTime.Text" xml:space="preserve">
+    <value>00:00.000 min</value>
+  </data>
+  <data name="&gt;&gt;txtParseTime.Name" xml:space="preserve">
+    <value>txtParseTime</value>
+  </data>
+  <data name="&gt;&gt;txtParseTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtParseTime.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtParseTime.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblParseTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblParseTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 74</value>
+  </data>
+  <data name="lblParseTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="lblParseTime.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblParseTime.Text" xml:space="preserve">
+    <value>Parse time</value>
+  </data>
+  <data name="&gt;&gt;lblParseTime.Name" xml:space="preserve">
+    <value>lblParseTime</value>
+  </data>
+  <data name="&gt;&gt;lblParseTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblParseTime.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblParseTime.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txtFileSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFileSize.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtFileSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 45</value>
+  </data>
+  <data name="txtFileSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="txtFileSize.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtFileSize.Text" xml:space="preserve">
+    <value>0.00 GB</value>
+  </data>
+  <data name="&gt;&gt;txtFileSize.Name" xml:space="preserve">
+    <value>txtFileSize</value>
+  </data>
+  <data name="&gt;&gt;txtFileSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFileSize.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtFileSize.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblFileSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFileSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 48</value>
+  </data>
+  <data name="lblFileSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="lblFileSize.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblFileSize.Text" xml:space="preserve">
+    <value>File size</value>
+  </data>
+  <data name="&gt;&gt;lblFileSize.Name" xml:space="preserve">
+    <value>lblFileSize</value>
+  </data>
+  <data name="&gt;&gt;lblFileSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFileSize.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblFileSize.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtFileName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFileName.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 21</value>
+  </data>
+  <data name="txtFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>473, 20</value>
+  </data>
+  <data name="txtFileName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtFileName.Text" xml:space="preserve">
+    <value>c:\...\file.json</value>
+  </data>
+  <data name="&gt;&gt;txtFileName.Name" xml:space="preserve">
+    <value>txtFileName</value>
+  </data>
+  <data name="&gt;&gt;txtFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFileName.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;txtFileName.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lblFileName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="lblFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="lblFileName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblFileName.Text" xml:space="preserve">
+    <value>JSON file</value>
+  </data>
+  <data name="&gt;&gt;lblFileName.Name" xml:space="preserve">
+    <value>lblFileName</value>
+  </data>
+  <data name="&gt;&gt;lblFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFileName.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblFileName.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="pnlStatistics.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlStatistics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 262</value>
+  </data>
+  <data name="pnlStatistics.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlStatistics.Name" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;pnlStatistics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlStatistics.Parent" xml:space="preserve">
+    <value>splitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;pnlStatistics.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel2.Name" xml:space="preserve">
+    <value>splitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel2.Parent" xml:space="preserve">
+    <value>splitter</value>
+  </data>
+  <data name="&gt;&gt;splitter.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1396, 477</value>
+  </data>
+  <data name="splitter.SplitterDistance" type="System.Int32, mscorlib">
+    <value>909</value>
+  </data>
+  <data name="splitter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;splitter.Name" xml:space="preserve">
+    <value>splitter</value>
+  </data>
+  <data name="&gt;&gt;splitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1396, 477</value>
+  </data>
+  <data name="&gt;&gt;treeListColumn1.Name" xml:space="preserve">
+    <value>treeListColumn1</value>
+  </data>
+  <data name="&gt;&gt;treeListColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.Columns.TreeListColumn, DevExpress.XtraTreeList.v15.2, Version=15.2.20.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;treeListColumn2.Name" xml:space="preserve">
+    <value>treeListColumn2</value>
+  </data>
+  <data name="&gt;&gt;treeListColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.Columns.TreeListColumn, DevExpress.XtraTreeList.v15.2, Version=15.2.20.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>JSONViewer</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

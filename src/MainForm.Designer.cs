@@ -42,56 +42,42 @@ namespace HugeJSONViewer
             // 
             // jsonTabs
             // 
-            this.jsonTabs.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
-            this.jsonTabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jsonTabs.Location = new System.Drawing.Point(0, 24);
+            resources.ApplyResources(this.jsonTabs, "jsonTabs");
             this.jsonTabs.Name = "jsonTabs";
-            this.jsonTabs.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.jsonTabs.Size = new System.Drawing.Size(661, 375);
-            this.jsonTabs.TabIndex = 1;
             this.jsonTabs.CloseButtonClick += new System.EventHandler(this.OnClose);
             // 
             // openJsonFile
             // 
             this.openJsonFile.DefaultExt = "json";
-            this.openJsonFile.Filter = "JSON file|*.json";
-            this.openJsonFile.Title = "Open JSON file";
+            resources.ApplyResources(this.openJsonFile, "openJsonFile");
             // 
             // mnuMain
             // 
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile});
-            this.mnuMain.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.mnuMain, "mnuMain");
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(661, 24);
-            this.mnuMain.TabIndex = 2;
-            this.mnuMain.Text = "menuStrip1";
             // 
             // mnuFile
             // 
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFileOpen});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(37, 20);
-            this.mnuFile.Text = "&File";
+            resources.ApplyResources(this.mnuFile, "mnuFile");
             // 
             // mnuFileOpen
             // 
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(162, 22);
-            this.mnuFileOpen.Text = "&Open JSON file...";
+            resources.ApplyResources(this.mnuFileOpen, "mnuFileOpen");
             this.mnuFileOpen.Click += new System.EventHandler(this.mnuFileOpen_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 399);
             this.Controls.Add(this.jsonTabs);
             this.Controls.Add(this.mnuMain);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "Huge JSON Viewer";
             this.Shown += new System.EventHandler(this.OnShown);
             ((System.ComponentModel.ISupportInitialize)(this.jsonTabs)).EndInit();
             this.mnuMain.ResumeLayout(false);

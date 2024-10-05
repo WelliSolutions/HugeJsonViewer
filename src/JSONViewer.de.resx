@@ -1,0 +1,128 @@
+﻿<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Erweitern bis Ebene</value>
+  </data>
+  <data name="lblArray.Text" xml:space="preserve">
+    <value>Array</value>
+  </data>
+  <data name="cmbExpandLevel.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmbExpandLevel.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbExpandLevel.Items10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmbExpandLevel.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbExpandLevel.Items3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmbExpandLevel.Items4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmbExpandLevel.Items5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbExpandLevel.Items6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmbExpandLevel.Items7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmbExpandLevel.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cmbExpandLevel.Items9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblArrayData.Text" xml:space="preserve">
+    <value>Array Daten:</value>
+  </data>
+  <data name="lblBool.Text" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="lblDisplayTime.Text" xml:space="preserve">
+    <value>Zeit zum Anzeigen</value>
+  </data>
+  <data name="lblFileName.Text" xml:space="preserve">
+    <value>JSON Datei</value>
+  </data>
+  <data name="lblFileSize.Text" xml:space="preserve">
+    <value>Dateigröße</value>
+  </data>
+  <data name="lblFloat.Text" xml:space="preserve">
+    <value>Kommazahl</value>
+  </data>
+  <data name="lblInt.Text" xml:space="preserve">
+    <value>Ganzzahl</value>
+  </data>
+  <data name="lblNodeCount.Text" xml:space="preserve">
+    <value>Knotenzahl</value>
+  </data>
+  <data name="lblObject.Text" xml:space="preserve">
+    <value>Objekt</value>
+  </data>
+  <data name="lblParseTime.Text" xml:space="preserve">
+    <value>Zeit zum Parsen</value>
+  </data>
+  <data name="lblProperties.Text" xml:space="preserve">
+    <value>Eigenschaften des selektierten Knotens</value>
+  </data>
+  <data name="treeListColumn1.Caption" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="treeListColumn2.Caption" xml:space="preserve">
+    <value>Wert</value>
+  </data>
+  <data name="txtDisplayTime.Text" xml:space="preserve">
+    <value>00:00.000 min</value>
+  </data>
+  <data name="txtFileName.Text" xml:space="preserve">
+    <value>c:\...\file.json</value>
+  </data>
+  <data name="txtFileSize.Text" xml:space="preserve">
+    <value>0.00 GB</value>
+  </data>
+  <data name="txtNodeCount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNodeCountArray.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNodeCountBool.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNodeCountFloat.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNodeCountInt.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNodeCountObject.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNodeCountString.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtParseTime.Text" xml:space="preserve">
+    <value>00:00.000 min</value>
+  </data>
+  <data name="txtString.Text" xml:space="preserve">
+    <value>String</value>
+  </data>
+</root>
