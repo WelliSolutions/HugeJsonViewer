@@ -9,10 +9,10 @@
 [Setup]
 AppName={#Title}
 AppVerName={#Title} {#AppVersion}
-AppPublisher=WelliSolutions
-AppPublisherURL=http://development.wellisolutions.de/huge-json-viewer/
-AppSupportURL=http://development.wellisolutions.de/huge-json-viewer/
-AppUpdatesURL=http://development.wellisolutions.de/huge-json-viewer/
+AppPublisher=Thomas Weller
+AppPublisherURL=https://github.com/WelliSolutions/HugeJsonViewer
+AppSupportURL=https://github.com/WelliSolutions/HugeJsonViewer/issues
+AppUpdatesURL=https://github.com/WelliSolutions/HugeJsonViewer/releases
 DefaultDirName={pf}\{#ShortTitle}
 DefaultGroupName={#Title}
 AllowNoIcons=true
@@ -21,14 +21,14 @@ OutputBaseFilename={#Title} {#AppVersion} Setup
 Compression=lzma
 SolidCompression=true
 ; Make useful description of Setup.exe itself
-VersionInfoCompany=WelliSolutions
-VersionInfoCopyright=2016 by WelliSolutions
+VersionInfoCompany=Thomas Weller
+VersionInfoCopyright=2024, Thomas Weller
 VersionInfoDescription={#Title} {#AppVersion} Setup
 VersionInfoProductName={#Title} Setup
 VersionInfoProductVersion={#AppVersion}
 VersionInfoTextVersion={#AppVersion}
 VersionInfoVersion={#AppVersion}
-AppCopyright=Copyright © 2016, WelliSolutions
+AppCopyright=2024, Thomas Weller
 SetupIconFile=Setup.ico
 WizardImageFile=Logo.bmp
 WizardSmallImageFile=WelliSolutions_Logo.bmp
@@ -62,4 +62,4 @@ LicenseFile=MIT.rtf
 
 [Icons]
 ; Workaround for Windows 10 bug of not displaying duplicate items in start menu: add ? parameter
-Name: {group}\Online documentation; Filename: "http://development.wellisolutions.de/huge-json-viewer/"
+Name: {group}\Online documentation; Filename: "https://github.com/WelliSolutions/HugeJsonViewer"

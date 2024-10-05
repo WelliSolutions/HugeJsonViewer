@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Huge JSON Viewer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("WelliSolutions")]
+[assembly: AssemblyCompany("Thomas Weller")]
 [assembly: AssemblyProduct("Huge JSON Viewer")]
-[assembly: AssemblyCopyright("Copyright (C) 2016, WelliSolutions")]
+[assembly: AssemblyCopyright("2024, Thomas Weller")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -31,6 +31,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.4.12.19")]
-[assembly: AssemblyFileVersion("0.4.12.19")]
-[assembly: AssemblyInformationalVersionAttribute("0.4.12.19")]
+[assembly: AssemblyVersion("0.4.13.20")]
+[assembly: AssemblyFileVersion("0.4.13.20")]
+[assembly: AssemblyInformationalVersion("0.4.13.20")]
