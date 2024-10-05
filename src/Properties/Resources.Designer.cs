@@ -61,6 +61,80 @@ namespace HugeJSONViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Converting into display data.
+        /// </summary>
+        internal static string ConvertingJsonCaption {
+            get {
+                return ResourceManager.GetString("ConvertingJsonCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please wait....
+        /// </summary>
+        internal static string ConvertingJsonWaitMessage {
+            get {
+                return ResourceManager.GetString("ConvertingJsonWaitMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Displaying.
+        /// </summary>
+        internal static string DisplayingJsonCaption {
+            get {
+                return ResourceManager.GetString("DisplayingJsonCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please wait....
+        /// </summary>
+        internal static string DisplayingJsonWaitMessage {
+            get {
+                return ResourceManager.GetString("DisplayingJsonWaitMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error accessing file: {0}
+        ///{1}.
+        /// </summary>
+        internal static string ErrorAccessingFile {
+            get {
+                return ResourceManager.GetString("ErrorAccessingFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error loading JSON.
+        /// </summary>
+        internal static string ErrorLoadingJson {
+            get {
+                return ResourceManager.GetString("ErrorLoadingJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error parsing JSON: {0}
+        ///{1}.
+        /// </summary>
+        internal static string ErrorParsingJson {
+            get {
+                return ResourceManager.GetString("ErrorParsingJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File not found: {0}.
+        /// </summary>
+        internal static string FileNotFound {
+            get {
+                return ResourceManager.GetString("FileNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The file size ({0}) might not fit into the memory of your PC.
         ///If so, it will slow down things tremendously.
         ///Continue anyway?.
@@ -68,6 +142,97 @@ namespace HugeJSONViewer.Properties {
         internal static string FileTooLargeWarning {
             get {
                 return ResourceManager.GetString("FileTooLargeWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0:0.000} GB.
+        /// </summary>
+        internal static string HumanReadableGB {
+            get {
+                return ResourceManager.GetString("HumanReadableGB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0:0.000} MB.
+        /// </summary>
+        internal static string HumanReadableKB {
+            get {
+                return ResourceManager.GetString("HumanReadableKB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0:0.000} kB.
+        /// </summary>
+        internal static string HumanReadableMB {
+            get {
+                return ResourceManager.GetString("HumanReadableMB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}:{1:00}.{2:000} min.
+        /// </summary>
+        internal static string HumanReadableTime {
+            get {
+                return ResourceManager.GetString("HumanReadableTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid file name: {0}
+        ///{1}.
+        /// </summary>
+        internal static string InvalidFileName {
+            get {
+                return ResourceManager.GetString("InvalidFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parsing JSON.
+        /// </summary>
+        internal static string ParsingJsonCaption {
+            get {
+                return ResourceManager.GetString("ParsingJsonCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please wait....
+        /// </summary>
+        internal static string ParsingJsonWaitMessage {
+            get {
+                return ResourceManager.GetString("ParsingJsonWaitMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Performance warning.
+        /// </summary>
+        internal static string PerformanceWarning {
+            get {
+                return ResourceManager.GetString("PerformanceWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}%.
+        /// </summary>
+        internal static string ProcessingJsonProgress {
+            get {
+                return ResourceManager.GetString("ProcessingJsonProgress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} / {1}.
+        /// </summary>
+        internal static string StreamingProgress {
+            get {
+                return ResourceManager.GetString("StreamingProgress", resourceCulture);
             }
         }
     }

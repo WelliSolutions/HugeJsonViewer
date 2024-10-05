@@ -16,7 +16,7 @@ namespace HugeJSONViewer
         /// Experimentally found overhead factor between JSON file size and
         /// used RAM for processing and displaying such a file.
         /// </summary>
-        private static int ESTIMATED_MEMORY_FACTOR = 7;
+        private static readonly int ESTIMATED_MEMORY_FACTOR = 7;
 
         private static readonly long RESERVED_MEMORY_FOR_OS = 1.GBToBytes();
 
@@ -36,7 +36,7 @@ namespace HugeJSONViewer
                 {
                     ExitCode = ExitCode.InvalidFileName,
                     Exception = ex,
-                    Message = $"Invalid file name: {filename}\r\n{ex.Message}"
+                    Message = string.Format(Resources.InvalidFileName, filename, ex.Message)
                 };
             }
 
@@ -45,7 +45,7 @@ namespace HugeJSONViewer
             {
                 return new ErrorInfo<FileInfo>
                 {
-                    Message = $"File not found: {filename}",
+                    Message = string.Format(Resources.FileNotFound, filename),
                     ExitCode = ExitCode.FileNotFound,
                 };
             }
@@ -57,7 +57,7 @@ namespace HugeJSONViewer
             {
                 var answer = MessageBox.Show(
                     string.Format(Resources.FileTooLargeWarning, HumanReadable.FileSize(file.Length)),
-                    "Performance warning",
+                    Resources.PerformanceWarning,
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning,
                     MessageBoxDefaultButton.Button2);
@@ -93,7 +93,7 @@ namespace HugeJSONViewer
                 return new ErrorInfo<PerformanceInfo<JContainer>>
                 {
                     Exception = ex,
-                    Message = $"Error parsing JSON: {fileInfo.FullName}\r\n{ex.Message}",
+                    Message = string.Format(Resources.ErrorParsingJson, fileInfo.FullName, ex.Message),
                     ExitCode = ExitCode.JsonFormatException
                 };
             }
@@ -101,7 +101,7 @@ namespace HugeJSONViewer
             {
                 return new ErrorInfo<PerformanceInfo<JContainer>>
                 {
-                    Message = $"Error accessing file: {fileInfo.FullName}\r\n{ex.Message}",
+                    Message = string.Format(Resources.ErrorAccessingFile, fileInfo.FullName, ex.Message),
                     Exception = ex,
                     ExitCode = ExitCode.FileAccessError
                 };

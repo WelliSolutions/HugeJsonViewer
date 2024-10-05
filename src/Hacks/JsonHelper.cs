@@ -2,6 +2,7 @@
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using HugeJSONViewer.Properties;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -35,15 +36,15 @@ namespace HugeJSONViewer.Hacks
             return (JContainer) obj;
         }
 
-        private int _mbread;
+        private int _nextProgressAt;
         private Action<string> _progress;
 
         private void OnStreamProgress(object sender, ProgressStreamReportEventArgs args)
         {
-            if (_mbread == args.TotalBytes/1.MBToBytes())
+            if (_nextProgressAt == args.TotalBytes/1.MBToBytes())
             {                
-                _progress($"{_mbread}/{args.StreamLength.BytesToMB()} MB");
-                Interlocked.Increment(ref _mbread);
+                _progress(string.Format(Resources.StreamingProgress, HumanReadable.FileSize(args.TotalBytes), HumanReadable.FileSize(args.StreamLength)));
+                Interlocked.Increment(ref _nextProgressAt);
                 Application.DoEvents();
             }
         }

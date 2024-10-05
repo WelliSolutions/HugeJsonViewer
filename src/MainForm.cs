@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Windows.Forms;
 using DevExpress.Utils;
 using DevExpress.XtraTab;
 using DevExpress.XtraTab.ViewInfo;
+using HugeJSONViewer.Properties;
 
 namespace HugeJSONViewer
 {
@@ -40,7 +40,7 @@ namespace HugeJSONViewer
             using (_progress = new Progress(this))
             {
                 var reader = new HugeJsonReader();
-                ErrorInfo<FileInfo> file = reader.OpenFile(filename);
+                var file = reader.OpenFile(filename);
                 if (file.HasError)
                 {
                     throw new JsonHasErrorsException(file.Message);
@@ -48,41 +48,42 @@ namespace HugeJSONViewer
 
                 var fileInfo = file.Value;
 
-                Invoke(new Action(() => _progress.Caption = "Parsing JSON"));
-                Invoke(new Action(() => _progress.Description = "Please wait..."));
+                Invoke(new Action(() => _progress.Caption = Resources.ParsingJsonCaption));
+                Invoke(new Action(() => _progress.Description = Resources.ParsingJsonWaitMessage));
                 var json = reader.Deserialize(fileInfo, s => _progress.Description = s);
                 if (json.HasError)
                 {
                     throw new JsonHasErrorsException(json.Message);
                 }
 
-                Invoke(new Action(() => _progress.Caption = "Converting into display data"));
-                Invoke(new Action(() => _progress.Description = "Please wait..."));
+                Invoke(new Action(() => _progress.Caption = Resources.ConvertingJsonCaption));
+                Invoke(new Action(() => _progress.Description = Resources.ConvertingJsonWaitMessage));
                 // Convert into a displayable object (DevExpress)
-                dataSource = new List<HierarchicalJObject>();
-                var h = new HierarchicalJObject(dataSource) {Token = json.Value.Value};
+                _dataSource = new List<HierarchicalJObject>();
+                var h = new HierarchicalJObject(_dataSource) {Token = json.Value.Value};
                 HierarchicalJObject.OnProgress += OnProgress;
-                dataSource.Add(h);
+                _dataSource.Add(h);
 
                 var jsonViewer = AddNewTab(file.Value.Name);
                 jsonViewer.JsonFile = file.Value;
                 jsonViewer.ParseTime = HumanReadable.Time(json.Value.ElapsedMilliseconds);
-                _progress.Caption = "Displaying";
-                jsonViewer.TreeViewData = dataSource;
+                _progress.Caption = Resources.DisplayingJsonCaption;
+                _progress.Description = Resources.DisplayingJsonWaitMessage;
+                jsonViewer.TreeViewData = _dataSource;
                 jsonViewer.treeJsonTree.RootValue = h.ID;
                 HierarchicalJObject.OnProgress -= OnProgress;
                 HierarchicalJObject.ResetProgress();
-                dataSource = null;
+                _dataSource = null;
             }
             _progress = null;
         }
 
-        List<HierarchicalJObject> dataSource = new List<HierarchicalJObject>();
+        List<HierarchicalJObject> _dataSource = new List<HierarchicalJObject>();
         private Progress _progress;
 
         private void OnProgress(int progress)
         {
-            Invoke(new Action(() => _progress.Description = $"{progress*50/dataSource.Count-50}%"));
+            Invoke(new Action(() => _progress.Description = string.Format(Resources.ProcessingJsonProgress, progress * 50 / _dataSource.Count - 50)));
             Application.DoEvents();
         }
 
@@ -117,7 +118,7 @@ namespace HugeJSONViewer
 
         private void OnShown(object sender, EventArgs e)
         {
-            string allerrors = string.Empty;
+            var allErrors = string.Empty;
             foreach (var filename in OpenFiles)
             {
                 try
@@ -126,18 +127,18 @@ namespace HugeJSONViewer
                 }
                 catch (JsonHasErrorsException exception)
                 {
-                    allerrors += exception.Message + Environment.NewLine + Environment.NewLine;
+                    allErrors += exception.Message + Environment.NewLine + Environment.NewLine;
                 }
             }
-            if (!string.IsNullOrEmpty(allerrors))
+            if (!string.IsNullOrEmpty(allErrors))
             {
-                ShowJsonError(allerrors);
+                ShowJsonError(allErrors);
             }
         }
 
         private void ShowJsonError(string message)
         {
-            MessageBox.Show(this, message, "Error loading JSON", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            MessageBox.Show(this, message, Resources.ErrorLoadingJson, MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
     }
 }

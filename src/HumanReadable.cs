@@ -1,4 +1,5 @@
 ﻿using System;
+using HugeJSONViewer.Properties;
 
 namespace HugeJSONViewer
 {
@@ -10,7 +11,7 @@ namespace HugeJSONViewer
         public static string Time(long timeMilliseconds)
         {
             var span = TimeSpan.FromMilliseconds(timeMilliseconds);
-            return $"{(int)span.TotalMinutes}:{span.Seconds:00}.{span.Milliseconds:000} min";
+            return string.Format(Resources.HumanReadableTime ,(int)span.TotalMinutes,span.Seconds,span.Milliseconds);
         }
 
         private static readonly double kB = 1024.0;
@@ -21,13 +22,13 @@ namespace HugeJSONViewer
         {
             if (sizeInBytes >= GB)
             {
-                return $"{sizeInBytes/GB:0.000} GB";
+                return string.Format(Resources.HumanReadableGB, sizeInBytes/GB);
             }
             if (sizeInBytes >= MB)
             {
-                return $"{sizeInBytes/MB:0.000} MB";
+                return string.Format(Resources.HumanReadableMB, sizeInBytes / MB);
             }
-            return $"{sizeInBytes/kB:0.000} kB";
+            return string.Format(Resources.HumanReadableKB, sizeInBytes / kB);
         }
     }
 }

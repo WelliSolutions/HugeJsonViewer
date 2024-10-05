@@ -122,4 +122,71 @@
 If so, it will slow down things tremendously.
 Continue anyway?</value>
   </data>
+  <data name="PerformanceWarning" xml:space="preserve">
+    <value>Performance warning</value>
+  </data>
+  <data name="InvalidFileName" xml:space="preserve">
+    <value>Invalid file name: {0}
+{1}</value>
+    <comment>0: file name, 1: exception message</comment>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>File not found: {0}</value>
+    <comment>0: file name</comment>
+  </data>
+  <data name="ErrorParsingJson" xml:space="preserve">
+    <value>Error parsing JSON: {0}
+{1}</value>
+    <comment>0: file name, 1: exception message</comment>
+  </data>
+  <data name="ErrorAccessingFile" xml:space="preserve">
+    <value>Error accessing file: {0}
+{1}</value>
+    <comment>0: file name, 1: exception message</comment>
+  </data>
+  <data name="StreamingProgress" xml:space="preserve">
+    <value>{0} / {1}</value>
+    <comment>0: current file progress, 1: total file size</comment>
+  </data>
+  <data name="ParsingJsonCaption" xml:space="preserve">
+    <value>Parsing JSON</value>
+  </data>
+  <data name="ParsingJsonWaitMessage" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="ConvertingJsonCaption" xml:space="preserve">
+    <value>Converting into display data</value>
+  </data>
+  <data name="ConvertingJsonWaitMessage" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="DisplayingJsonCaption" xml:space="preserve">
+    <value>Displaying</value>
+  </data>
+  <data name="DisplayingJsonWaitMessage" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="ProcessingJsonProgress" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>0: percentage</comment>
+  </data>
+  <data name="ErrorLoadingJson" xml:space="preserve">
+    <value>Error loading JSON</value>
+  </data>
+  <data name="HumanReadableTime" xml:space="preserve">
+    <value>{0}:{1:00}.{2:000} min</value>
+    <comment>0: minutes, 1:seconds, 2:milliseconds</comment>
+  </data>
+  <data name="HumanReadableGB" xml:space="preserve">
+    <value>{0:0.000} GB</value>
+    <comment>0: GB value</comment>
+  </data>
+  <data name="HumanReadableMB" xml:space="preserve">
+    <value>{0:0.000} kB</value>
+    <comment>0: GB value</comment>
+  </data>
+  <data name="HumanReadableKB" xml:space="preserve">
+    <value>{0:0.000} MB</value>
+    <comment>0: GB value</comment>
+  </data>
 </root>
