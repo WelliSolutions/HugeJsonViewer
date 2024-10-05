@@ -31,12 +31,12 @@ namespace HugeJSONViewer
                 {
                     {
                         txtNodeCount.Text = value.Count.ToString();
-                        txtNodeCountObject.Text = value.Count(x => x.Object.Type == JTokenType.Object).ToString();
-                        txtNodeCountArray.Text = value.Count(x => x.Object.Type == JTokenType.Array).ToString();
-                        txtNodeCountInt.Text = value.Count(x => x.Object.Type == JTokenType.Integer).ToString();
-                        txtNodeCountFloat.Text = value.Count(x => x.Object.Type == JTokenType.Float).ToString();
-                        txtNodeCountString.Text = value.Count(x => x.Object.Type == JTokenType.String).ToString();
-                        txtNodeCountBool.Text = value.Count(x => x.Object.Type == JTokenType.Boolean).ToString();
+                        txtNodeCountObject.Text = value.Count(x => x.Token.Type == JTokenType.Object).ToString();
+                        txtNodeCountArray.Text = value.Count(x => x.Token.Type == JTokenType.Array).ToString();
+                        txtNodeCountInt.Text = value.Count(x => x.Token.Type == JTokenType.Integer).ToString();
+                        txtNodeCountFloat.Text = value.Count(x => x.Token.Type == JTokenType.Float).ToString();
+                        txtNodeCountString.Text = value.Count(x => x.Token.Type == JTokenType.String).ToString();
+                        txtNodeCountBool.Text = value.Count(x => x.Token.Type == JTokenType.Boolean).ToString();
                     }
                 }
                 ResumeLayout(true);
@@ -82,21 +82,21 @@ namespace HugeJSONViewer
         {
             var propertyData = new JsonDisplayData();
 
-            if (node.Object is JObject) propertyData.Type = "Object";
-            else if (node.Object is JProperty) propertyData.Type = "Property";
-            else if (node.Object is JArray) propertyData.Type = "Array";
-            else propertyData.Type = node.Object.GetType().ToString();
+            if (node.Token is JObject) propertyData.Type = "Object";
+            else if (node.Token is JProperty) propertyData.Type = "Property";
+            else if (node.Token is JArray) propertyData.Type = "Array";
+            else propertyData.Type = node.Token.GetType().ToString();
 
-            if (node.Object is JValue)
+            if (node.Token is JValue)
             {
-                var jValue = (JValue) node.Object;
+                var jValue = (JValue) node.Token;
                 propertyData.Value = jValue.Value?.ToString() ?? "";
                 propertyData.Type = jValue.Type.ToString();
             }
 
-            if (node.Object is JArray)
+            if (node.Token is JArray)
             {
-                var array = (JArray)node.Object;
+                var array = (JArray)node.Token;
                 propertyData.ArrayLength = array.Count;
                 if (array.Count > 0)
                 {

@@ -60,7 +60,7 @@ namespace HugeJSONViewer
                 Invoke(new Action(() => _progress.Description = "Please wait..."));
                 // Convert into a displayable object (DevExpress)
                 dataSource = new List<HierarchicalJObject>();
-                var h = new HierarchicalJObject(dataSource) {Object = json.Value.Value};
+                var h = new HierarchicalJObject(dataSource) {Token = json.Value.Value};
                 HierarchicalJObject.OnProgress += OnProgress;
                 dataSource.Add(h);
 
