@@ -1,4 +1,4 @@
-﻿namespace HugeJSONViewer.Hacks
+﻿namespace HugeJSONViewer
 {
     /// <summary>
     /// The delegate for handling a ProgressStream Report event.

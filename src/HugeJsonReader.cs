@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
-using HugeJSONViewer.Hacks;
 using HugeJSONViewer.Properties;
 using Microsoft.VisualBasic.Devices;
 using Newtonsoft.Json;

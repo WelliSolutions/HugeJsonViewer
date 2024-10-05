@@ -6,7 +6,7 @@ using HugeJSONViewer.Properties;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace HugeJSONViewer.Hacks
+namespace HugeJSONViewer
 {
     class JsonHelper
     {

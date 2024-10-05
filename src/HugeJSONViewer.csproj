@@ -85,7 +85,7 @@
     </Compile>
     <Compile Include="PerformanceInfo.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Progress.cs" />
+    <Compile Include="WindowPositioner.cs" />
     <Compile Include="ProgressForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace HugeJSONViewer.Hacks
+namespace HugeJSONViewer
 {
     /// <summary>
     /// Wraps another stream and provides reporting for when bytes are read or written to the stream.

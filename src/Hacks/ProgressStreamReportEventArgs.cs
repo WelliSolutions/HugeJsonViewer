@@ -1,6 +1,6 @@
 using System;
 
-namespace HugeJSONViewer.Hacks
+namespace HugeJSONViewer
 {
     /// <summary>
     /// Contains the pertinent data for a ProgressStream Report event.

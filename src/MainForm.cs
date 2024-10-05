@@ -5,6 +5,7 @@ using DevExpress.Utils;
 using DevExpress.XtraTab;
 using DevExpress.XtraTab.ViewInfo;
 using HugeJSONViewer.Properties;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace HugeJSONViewer
 {
@@ -37,8 +38,10 @@ namespace HugeJSONViewer
 
         private void LoadJson(string filename)
         {
-            using (_progress = new Progress(this))
+            using (_progress = new ProgressForm())
             {
+                _progress.Show();
+                WindowPositioner.CenterOnParent(_progress, this);
                 var reader = new HugeJsonReader();
                 var file = reader.OpenFile(filename);
                 if (file.HasError)
@@ -79,7 +82,7 @@ namespace HugeJSONViewer
         }
 
         List<HierarchicalJObject> _dataSource = new List<HierarchicalJObject>();
-        private Progress _progress;
+        private ProgressForm _progress;
 
         private void OnProgress(int progress)
         {
@@ -109,6 +112,7 @@ namespace HugeJSONViewer
                 if (jsonViewer.JsonFile.Length > 100.MBToBytes())
                 {
                     jsonViewer.TreeViewData = null;
+                    // ReSharper disable once RedundantAssignment
                     jsonViewer = null;
                     GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced);
                 }
