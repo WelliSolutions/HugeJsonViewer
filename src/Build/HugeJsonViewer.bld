@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project version='9' encrypted='1'>
+	<steps type='0'>
+		<step action='Subroutine Call'>
+			<Expand type='11'>-1</Expand>
+			<ParamValues array='0'>REVISION</ParamValues>
+			<Parameters array='0'>OUTPUTMACRO</Parameters>
+			<SubName>Get SVN revision</SubName>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<name>Get SVN revision</name>
+		</step>
+		<step action='Make VS 2013'>
+			<AssemblyVer type='11'>-1</AssemblyVer>
+			<Attr type='11'>-1</Attr>
+			<Config>Release|Any CPU</Config>
+			<FileVer type='11'>-1</FileVer>
+			<Filename>..\HugeJsonViewer.sln</Filename>
+			<ProdVer type='11'>-1</ProdVer>
+			<Property1>WelliSolutions</Property1>
+			<Property2>%PRODUCTNAME%</Property2>
+			<Property3>Copyright (C) 2016, WelliSolutions</Property3>
+			<PropertyOn1 type='11'>-1</PropertyOn1>
+			<PropertyOn2 type='11'>-1</PropertyOn2>
+			<PropertyOn3 type='11'>-1</PropertyOn3>
+			<Version>%VERSION%</Version>
+			<VersionSel type='3'>2</VersionSel>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<name>Make Project</name>
+		</step>
+		<step action='Sign Code'>
+			<CertDescr>%PRODUCTNAME% %VERSION%</CertDescr>
+			<Filename>..\bin\Release\%EXENAME%</Filename>
+			<InfoURL>%INFOURL%</InfoURL>
+			<KeepMod type='11'>-1</KeepMod>
+			<Password encrypted='1'>amkwNSREZkNXUFp3JmFRMtXR3h/hLVR7niOFXcmmOHKVrGPvb6OrBFoRDxHZRNDv</Password>
+			<StoreName>%PFXFILE%</StoreName>
+			<TimeServer>http://timestamp.verisign.com/scripts/timstamp.dll</TimeServer>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<checked type='11'>0</checked>
+			<name>Sign Program</name>
+			<pausebefore>10</pausebefore>
+		</step>
+		<step action='Inno Setup'>
+			<Exe>C:\Program Files (x86)\Inno Setup 5\ISCC.exe</Exe>
+			<Filename>..\Installer\HugeJsonViewer.iss</Filename>
+			<ISPPCompat type='11'>-1</ISPPCompat>
+			<OutputFilename>Huge JSON Viewer %VERSION% Setup</OutputFilename>
+			<ShowCmd type='11'>-1</ShowCmd>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<name>Make Setup</name>
+		</step>
+		<step action='Sign Code'>
+			<CertDescr>%PRODUCTNAME% %VERSION% Setup</CertDescr>
+			<Filename>..\Installer\Compiled\%PRODUCTNAME% %VERSION% Setup.exe</Filename>
+			<InfoURL>%INFOURL%</InfoURL>
+			<KeepMod type='11'>-1</KeepMod>
+			<Password encrypted='1'>amkwNSREZkNXUFp3JmFRMtXR3h/hLVR7niOFXcmmOHKVrGPvb6OrBFoRDxHZRNDv</Password>
+			<StoreName>%PFXFILE%</StoreName>
+			<TimeServer>http://timestamp.verisign.com/scripts/timstamp.dll</TimeServer>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<checked type='11'>0</checked>
+			<name>Sign Setup</name>
+			<pausebefore>10</pausebefore>
+		</step></steps>
+	<steps type='1'>
+		<step action='Group'>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<name>Get SVN revision</name>
+		</step>
+		<step action='Subversion'>
+			<Repository>%PROJDIR%</Repository>
+			<Subcommand>update</Subcommand>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<indent type='3'>1</indent>
+			<name>Update revision number</name>
+		</step>
+		<step action='Run Program'>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<command><![CDATA[%DOSCMD% svn info --xml > "%PROJDIR%\svninfo.xml"]]></command>
+			<indent type='3'>1</indent>
+			<name>Get SVN Info</name>
+			<outputfrom type='3'>1</outputfrom>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[dim fso
+Set fso = CreateObject("Scripting.FileSystemObject")
+dim filename
+filename = Application.ExpandMacros("%PROJDIR%\svninfo.xml")
+dim file
+set file = fso.OpenTextFile(filename, 1)
+dim filecontent
+filecontent = ""
+Do While Not file.AtEndOfStream
+ filecontent = filecontent + file.readline + vbNewLine
+loop
+file.Close()
+set file = nothing
+set fso = nothing
+
+Builder.LogMessage(filecontent)
+
+' Load as XML document
+set xmlDoc=CreateObject("Microsoft.XMLDOM")
+call xmlDoc.loadxml(filecontent)
+
+' Extract information
+dim revision
+set revision = xmlDoc.SelectSingleNode("/info/entry/@revision")
+
+' Set output variable
+dim out
+out = Application.ExpandMacros("%OUTPUTMACRO%")
+call Application.Macros(vbldMacroTemporary).Add(out, revision.Value)]]></Script>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<indent type='3'>1</indent>
+			<name>Extract revision from XML</name>
+		</step>
+		<step action='Delete Files'>
+			<Ext>svninfo.xml</Ext>
+			<HideOn type='11'>-1</HideOn>
+			<LogDel type='11'>-1</LogDel>
+			<Path>%PROJDIR%</Path>
+			<SysOn type='11'>-1</SysOn>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<indent type='3'>1</indent>
+			<name>Delete XML File</name>
+		</step></steps>
+	<macros>
+		<macro name='BUILD'>
+			<value>12</value>
+		</macro>
+		<macro name='EXENAME'>
+			<value>HugeJsonViewer.exe</value>
+		</macro>
+		<macro name='INFOURL'>
+			<value>http://development.wellisolutions.de/huge-json-viewer/</value>
+		</macro>
+		<macro name='MAJOR'>
+			<value>0</value>
+		</macro>
+		<macro name='MINOR'>
+			<value>4</value>
+		</macro>
+		<macro name='PFXFILE'>
+			<value>F:\Projekte\WelliSolutions\Offizielles\Zertifikate\ThomasWeller.pfx</value>
+		</macro>
+		<macro name='PRODUCTNAME'>
+			<value>Huge JSON Viewer</value>
+		</macro>
+		<macro name='VERSION'>
+			<value>%MAJOR%.%MINOR%.%BUILD%.%REVISION%</value>
+		</macro></macros>
+</project>

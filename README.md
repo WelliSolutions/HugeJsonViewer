@@ -10,9 +10,19 @@ Inspired by a [Question on Software Recommendations](http://softwarerecs.stackex
 
 ## Releases
 
+These will be the last releases which are code-signed and time-stamped. My code signing certificate is expired and I don't want to buy a new one.
+
 [Huge JSON Viewer 0.4.12.19 Setup.exe.zip](https://wellisolutions.de/downloads/Huge-JSON-Viewer-0.4.12.19-Setup.exe_.zip) (13.8 MB)
 
 [Huge JSON Viewer 0.4.12.19 Portable.zip](https://wellisolutions.de/downloads/Huge-JSON-Viewer-0.4.12.19-Portable.zip) (17.4 MB)
+
+## How to build
+
+In order to build the project, you need DevExpress as the UI toolkit. The license file mentions `XtraVerticalGrid` and `XtraTreeList`.
+
+The original version was built using [VisualBuild](https://www.kinook.com/VisBuildPro/). In case you don't have Visual Build, here's a screenshot of what it does:
+
+![Build steps](./build-steps.png)
 
 ## Screenshots
 
