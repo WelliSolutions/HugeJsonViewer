@@ -5,7 +5,6 @@ using System.Windows.Forms;
 using HugeJSONViewer.Properties;
 using Microsoft.VisualBasic.Devices;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace HugeJSONViewer
 {
@@ -75,9 +74,9 @@ namespace HugeJSONViewer
             };
         }
 
-        internal ErrorInfo<PerformanceInfo<JContainer>> Deserialize(FileInfo fileInfo, Action<string> progress)
+        internal ErrorInfo<PerformanceInfo<DeserializationResult>> Deserialize(FileInfo fileInfo, Action<string> progress)
         {
-            JContainer json;
+            DeserializationResult json;
             long parseTimeMilliseconds;
             try
             {
@@ -89,7 +88,7 @@ namespace HugeJSONViewer
             }
             catch (JsonReaderException ex)
             {
-                return new ErrorInfo<PerformanceInfo<JContainer>>
+                return new ErrorInfo<PerformanceInfo<DeserializationResult>>
                 {
                     Exception = ex,
                     Message = string.Format(Resources.ErrorParsingJson, fileInfo.FullName, ex.Message),
@@ -98,7 +97,7 @@ namespace HugeJSONViewer
             }
             catch (Exception ex)
             {
-                return new ErrorInfo<PerformanceInfo<JContainer>>
+                return new ErrorInfo<PerformanceInfo<DeserializationResult>>
                 {
                     Message = string.Format(Resources.ErrorAccessingFile, fileInfo.FullName, ex.Message),
                     Exception = ex,
@@ -106,9 +105,9 @@ namespace HugeJSONViewer
                 };
             }
 
-            return new ErrorInfo<PerformanceInfo<JContainer>>
+            return new ErrorInfo<PerformanceInfo<DeserializationResult>>
             {
-                Value = new PerformanceInfo<JContainer>
+                Value = new PerformanceInfo<DeserializationResult>
                 {
                     ElapsedMilliseconds = parseTimeMilliseconds,
                     Value = json

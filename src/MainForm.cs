@@ -5,6 +5,7 @@ using DevExpress.Utils;
 using DevExpress.XtraTab;
 using DevExpress.XtraTab.ViewInfo;
 using HugeJSONViewer.Properties;
+using Newtonsoft.Json.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace HugeJSONViewer
@@ -58,17 +59,23 @@ namespace HugeJSONViewer
                 {
                     throw new JsonHasErrorsException(json.Message);
                 }
+                if (!json.Value.Value.ReachedEndOfStream)
+                {
+                    MessageBox.Show(this, Resources.MaybeNewlineDelimited, Resources.MaybeNewlineDelimitedCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
 
                 Invoke(new Action(() => _progress.Caption = Resources.ConvertingJsonCaption));
                 Invoke(new Action(() => _progress.Description = Resources.ConvertingJsonWaitMessage));
+
                 // Convert into a displayable object (DevExpress)
                 _dataSource = new List<HierarchicalJObject>();
-                var h = new HierarchicalJObject(_dataSource) {Token = json.Value.Value};
+                var h = new HierarchicalJObject(_dataSource) { Token = json.Value.Value.Data };
                 HierarchicalJObject.OnProgress += OnProgress;
                 _dataSource.Add(h);
 
                 var jsonViewer = AddNewTab(file.Value.Name);
                 jsonViewer.JsonFile = file.Value;
+                jsonViewer.IsNdJson = json.Value.Value.IsNdJson;
                 jsonViewer.ParseTime = HumanReadable.Time(json.Value.ElapsedMilliseconds);
                 _progress.Caption = Resources.DisplayingJsonCaption;
                 _progress.Description = Resources.DisplayingJsonWaitMessage;

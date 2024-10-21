@@ -61,7 +61,11 @@ namespace HugeJSONViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Icons: https://icons8.com.
+        ///   Looks up a localized string similar to Huge JSON Viewer
+        ///Program to view large JSON files.
+        ///
+        ///Source code: https://github.com/WelliSolutions/HugeJsonViewer
+        ///Icons: https://tabler-icons.io/.
         /// </summary>
         internal static string AboutMessage {
             get {
@@ -206,6 +210,24 @@ namespace HugeJSONViewer.Properties {
         internal static string InvalidFileName {
             get {
                 return ResourceManager.GetString("InvalidFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string MaybeNewlineDelimited {
+            get {
+                return ResourceManager.GetString("MaybeNewlineDelimited", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File size mismatch.
+        /// </summary>
+        internal static string MaybeNewlineDelimitedCaption {
+            get {
+                return ResourceManager.GetString("MaybeNewlineDelimitedCaption", resourceCulture);
             }
         }
         

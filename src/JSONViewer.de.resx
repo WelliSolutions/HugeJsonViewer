@@ -125,4 +125,7 @@
   <data name="txtString.Text" xml:space="preserve">
     <value>String</value>
   </data>
+  <data name="lblNdJson.Text" xml:space="preserve">
+    <value>Diese Datei ist NDJSON (Newline Delimited JSON). Die äußere Liste enthält die Objekte in der Datei.</value>
+  </data>
 </root>
