@@ -83,4 +83,12 @@ Icons: https://tabler-icons.io/</value>
   <data name="AboutTitle" xml:space="preserve">
     <value>Über</value>
   </data>
+  <data name="MaybeNewlineDelimitedCaption" xml:space="preserve">
+    <value>Dateigröße unstimmig</value>
+  </data>
+  <data name="MaybeNewlineDelimited" xml:space="preserve">
+    <value>Die Datei wurde gelesen und die Erfassung des JSON ist erfolgreich abgeschlossen. Jedoch wurde nicht die gesamte Datei gelesen.
+Es gibt in der Datei weitere Daten, die von HugeJsonViewer nicht angezeigt werden.
+Vielleicht haben Sie eine NDJSON Datei (Newline Delimited JSON) geöffnet, anstatt einer JSON Datei. NDJSON wird derzeit nicht unterstützt. Nur das erste Objekt wird angezeigt.</value>
+  </data>
 </root>

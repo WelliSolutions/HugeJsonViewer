@@ -8,32 +8,51 @@ using Newtonsoft.Json.Linq;
 
 namespace HugeJSONViewer
 {
+    class DeserializationResult
+    {
+        public JContainer Data;
+        public bool ReachedEndOfStream;
+    }
     class JsonHelper
     {
-        public JContainer DeserializeViaStream(string filename, Action<string> progress)
+        public DeserializationResult DeserializeViaStream(string filename, Action<string> progress)
         {
             _progress = progress;
-            object obj;
             var serializer = new JsonSerializer();
+            var result = new DeserializationResult();
 
 
-            using (var fileStream = new FileStream(filename, FileMode.Open))
+            using var fileStream = new FileStream(filename, FileMode.Open);
+            using var progressStream = new ProgressStream(fileStream);
+            progressStream.BytesRead += OnStreamProgress;
+            using (var sr =new StreamReader(progressStream))
             {
-                using (var progressStream = new ProgressStream(fileStream))
+                using (var jsonTextReader = new JsonTextReader(sr))
                 {
-                    progressStream.BytesRead += OnStreamProgress;
-                    using (var sr =new StreamReader(progressStream))
-                    {
-                        using (var jsonTextReader = new JsonTextReader(sr))
-                        {
-                            obj = serializer.Deserialize(jsonTextReader);
-                        }
-                    }
-                    progressStream.BytesRead -= OnStreamProgress;
+                    result.Data = (JContainer) serializer.Deserialize(jsonTextReader);
+                    result.ReachedEndOfStream = IsEndOfStream(jsonTextReader);
                 }
             }
+            progressStream.BytesRead -= OnStreamProgress;
 
-            return (JContainer) obj;
+            return result;
+        }
+
+        private static bool IsEndOfStream(JsonTextReader jsonTextReader)
+        {
+            try
+            {
+                if (jsonTextReader.Read())
+                {
+                    return false;
+                }
+            }
+            catch (JsonReaderException)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         private int _nextProgressAt;

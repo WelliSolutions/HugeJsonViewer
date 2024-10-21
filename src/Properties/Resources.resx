@@ -199,4 +199,12 @@ Icons: https://tabler-icons.io/</value>
   <data name="AboutTitle" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="MaybeNewlineDelimitedCaption" xml:space="preserve">
+    <value>File size mismatch</value>
+  </data>
+  <data name="MaybeNewlineDelimited" xml:space="preserve">
+    <value>The file was read and parsing the JSON completed. However, not the whole file was read.
+There's more data in the file than will be displayed by HugeJsonViewer.
+Perhaps you have opened a NDJSON file (newline delimited JSON) instead of a regular JSON file. NDJSON is currently not supported. Only the first object will be displayed.</value>
+  </data>
 </root>
