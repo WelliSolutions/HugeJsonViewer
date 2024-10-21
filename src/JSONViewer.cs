@@ -65,6 +65,11 @@ namespace HugeJSONViewer
             }
         }
 
+        public bool IsNdJson
+        {
+            set => lblNdJson.Visible = value;
+        }
+
 
         private void OnAfterFocusNode(object sender, DevExpress.XtraTreeList.NodeEventArgs e)
         {

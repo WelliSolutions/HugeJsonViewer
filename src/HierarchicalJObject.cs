@@ -58,8 +58,20 @@ namespace HugeJSONViewer
         {
             get
             {
+                if (Token.Parent == null)
+                {
+                    return "NDJSON";
+                }
+                switch (Token.Parent?.Type)
+                {
+                    case JTokenType.Property:
+                        return ((JProperty)(Token.Parent)).Name;
+                    case JTokenType.Array:
+                        return "[" + ((JArray)(Token.Parent)).IndexOf(Token)+ "]";
+                }
                 var startIndex = Token.Parent?.Parent?.Path.Length;
-                return Token.Path.Substring(startIndex??0).Trim('.');
+                var path = Token.Path.Substring(startIndex??0).Trim('.');
+                return path;
             }
         }
 

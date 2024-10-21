@@ -63,6 +63,7 @@
             this.lblFileSize = new System.Windows.Forms.Label();
             this.txtFileName = new System.Windows.Forms.TextBox();
             this.lblFileName = new System.Windows.Forms.Label();
+            this.lblNdJson = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitter)).BeginInit();
             this.splitter.Panel1.SuspendLayout();
             this.splitter.Panel2.SuspendLayout();
@@ -181,6 +182,7 @@
             // 
             // pnlStatistics
             // 
+            this.pnlStatistics.Controls.Add(this.lblNdJson);
             this.pnlStatistics.Controls.Add(this.lblBool);
             this.pnlStatistics.Controls.Add(this.txtNodeCountBool);
             this.pnlStatistics.Controls.Add(this.txtString);
@@ -316,6 +318,12 @@
             resources.ApplyResources(this.lblFileName, "lblFileName");
             this.lblFileName.Name = "lblFileName";
             // 
+            // lblNdJson
+            // 
+            resources.ApplyResources(this.lblNdJson, "lblNdJson");
+            this.lblNdJson.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblNdJson.Name = "lblNdJson";
+            // 
             // JSONViewer
             // 
             resources.ApplyResources(this, "$this");
@@ -373,5 +381,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbExpandLevel;
+        private System.Windows.Forms.Label lblNdJson;
     }
 }

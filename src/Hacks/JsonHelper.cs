@@ -12,6 +12,7 @@ namespace HugeJSONViewer
     {
         public JContainer Data;
         public bool ReachedEndOfStream;
+        public bool IsNdJson;
     }
     class JsonHelper
     {
@@ -29,8 +30,20 @@ namespace HugeJSONViewer
             {
                 using (var jsonTextReader = new JsonTextReader(sr))
                 {
-                    result.Data = (JContainer) serializer.Deserialize(jsonTextReader);
+                    jsonTextReader.SupportMultipleContent = true;
+                    var d = serializer.Deserialize(jsonTextReader);
+                    result.Data = (JContainer)d;
+                    // jsonTextReader.Read(); // Workaround for https://github.com/JamesNK/Newtonsoft.Json/issues/2991
                     result.ReachedEndOfStream = IsEndOfStream(jsonTextReader);
+                    var ndjson = new JArray { result.Data };
+                    while (!result.ReachedEndOfStream)
+                    {
+                        var next = serializer.Deserialize(jsonTextReader);
+                        ndjson.Add(next);
+                        result.Data = ndjson;
+                        result.IsNdJson = true;
+                        result.ReachedEndOfStream = IsEndOfStream(jsonTextReader);
+                    }
                 }
             }
             progressStream.BytesRead -= OnStreamProgress;
@@ -47,7 +60,7 @@ namespace HugeJSONViewer
                     return false;
                 }
             }
-            catch (JsonReaderException)
+            catch (JsonReaderException jre)
             {
                 return false;
             }

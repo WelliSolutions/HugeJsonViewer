@@ -154,7 +154,7 @@
     <value>1</value>
   </data>
   <data name="treeJsonTree.Size" type="System.Drawing.Size, System.Drawing">
-    <value>909, 436</value>
+    <value>1005, 436</value>
   </data>
   <data name="treeJsonTree.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -259,7 +259,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>909, 41</value>
+    <value>1005, 41</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -295,7 +295,7 @@
     <value>False</value>
   </data>
   <data name="txtArrayData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 439</value>
+    <value>0, 459</value>
   </data>
   <data name="txtArrayData.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -304,7 +304,7 @@
     <value>Vertical</value>
   </data>
   <data name="txtArrayData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>483, 38</value>
+    <value>387, 18</value>
   </data>
   <data name="txtArrayData.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -328,7 +328,7 @@
     <value>Top</value>
   </data>
   <data name="lblArrayData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 426</value>
+    <value>0, 446</value>
   </data>
   <data name="lblArrayData.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
@@ -355,10 +355,10 @@
     <value>Top</value>
   </data>
   <data name="propJsonProperties.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 275</value>
+    <value>0, 295</value>
   </data>
   <data name="propJsonProperties.Size" type="System.Drawing.Size, System.Drawing">
-    <value>483, 151</value>
+    <value>387, 151</value>
   </data>
   <data name="propJsonProperties.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -382,7 +382,7 @@
     <value>Top</value>
   </data>
   <data name="lblProperties.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 262</value>
+    <value>0, 282</value>
   </data>
   <data name="lblProperties.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 13</value>
@@ -405,11 +405,41 @@
   <data name="&gt;&gt;lblProperties.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="lblNdJson.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNdJson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 234</value>
+  </data>
+  <data name="lblNdJson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 48</value>
+  </data>
+  <data name="lblNdJson.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblNdJson.Text" xml:space="preserve">
+    <value>This file is NDJSON (new line delimited JSON). The outer list represents the objects in that file.</value>
+  </data>
+  <data name="lblNdJson.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblNdJson.Name" xml:space="preserve">
+    <value>lblNdJson</value>
+  </data>
+  <data name="&gt;&gt;lblNdJson.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNdJson.Parent" xml:space="preserve">
+    <value>pnlStatistics</value>
+  </data>
+  <data name="&gt;&gt;lblNdJson.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="lblBool.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="lblBool.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 204</value>
+    <value>248, 204</value>
   </data>
   <data name="lblBool.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -433,7 +463,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblBool.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="txtNodeCountBool.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -442,7 +472,7 @@
     <value>False</value>
   </data>
   <data name="txtNodeCountBool.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 201</value>
+    <value>332, 201</value>
   </data>
   <data name="txtNodeCountBool.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -463,13 +493,13 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtNodeCountBool.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtString.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtString.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 178</value>
+    <value>251, 178</value>
   </data>
   <data name="txtString.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 13</value>
@@ -493,7 +523,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtString.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txtNodeCountString.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -502,7 +532,7 @@
     <value>False</value>
   </data>
   <data name="txtNodeCountString.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 175</value>
+    <value>332, 175</value>
   </data>
   <data name="txtNodeCountString.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -523,13 +553,13 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtNodeCountString.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lblFloat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="lblFloat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 152</value>
+    <value>251, 152</value>
   </data>
   <data name="lblFloat.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 13</value>
@@ -553,7 +583,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblFloat.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="txtNodeCountFloat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -562,7 +592,7 @@
     <value>False</value>
   </data>
   <data name="txtNodeCountFloat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 149</value>
+    <value>332, 149</value>
   </data>
   <data name="txtNodeCountFloat.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -583,13 +613,13 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtNodeCountFloat.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lblInt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="lblInt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 204</value>
+    <value>99, 204</value>
   </data>
   <data name="lblInt.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -613,7 +643,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblInt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="txtNodeCountInt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -622,7 +652,7 @@
     <value>False</value>
   </data>
   <data name="txtNodeCountInt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 201</value>
+    <value>190, 201</value>
   </data>
   <data name="txtNodeCountInt.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -643,13 +673,13 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtNodeCountInt.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lblArray.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="lblArray.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 178</value>
+    <value>99, 178</value>
   </data>
   <data name="lblArray.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -673,7 +703,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblArray.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txtNodeCountArray.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -682,7 +712,7 @@
     <value>False</value>
   </data>
   <data name="txtNodeCountArray.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 175</value>
+    <value>190, 175</value>
   </data>
   <data name="txtNodeCountArray.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -703,13 +733,13 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtNodeCountArray.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="lblObject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="lblObject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 152</value>
+    <value>96, 152</value>
   </data>
   <data name="lblObject.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 13</value>
@@ -733,7 +763,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblObject.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="txtNodeCountObject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -742,7 +772,7 @@
     <value>False</value>
   </data>
   <data name="txtNodeCountObject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 149</value>
+    <value>190, 149</value>
   </data>
   <data name="txtNodeCountObject.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -763,7 +793,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtNodeCountObject.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="lblNodeCount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -790,7 +820,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblNodeCount.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="txtNodeCount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -802,7 +832,7 @@
     <value>119, 123</value>
   </data>
   <data name="txtNodeCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 20</value>
+    <value>265, 20</value>
   </data>
   <data name="txtNodeCount.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -820,7 +850,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtNodeCount.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="txtDisplayTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -832,7 +862,7 @@
     <value>119, 97</value>
   </data>
   <data name="txtDisplayTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 20</value>
+    <value>265, 20</value>
   </data>
   <data name="txtDisplayTime.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -850,7 +880,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtDisplayTime.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="lblDisplayTime.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -877,7 +907,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblDisplayTime.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="txtParseTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -889,7 +919,7 @@
     <value>119, 71</value>
   </data>
   <data name="txtParseTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 20</value>
+    <value>265, 20</value>
   </data>
   <data name="txtParseTime.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -907,7 +937,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtParseTime.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="lblParseTime.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -934,7 +964,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblParseTime.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="txtFileSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -946,7 +976,7 @@
     <value>119, 45</value>
   </data>
   <data name="txtFileSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 20</value>
+    <value>265, 20</value>
   </data>
   <data name="txtFileSize.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -964,7 +994,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtFileSize.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="lblFileSize.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -991,7 +1021,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblFileSize.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="txtFileName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1003,7 +1033,7 @@
     <value>7, 21</value>
   </data>
   <data name="txtFileName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>473, 20</value>
+    <value>377, 20</value>
   </data>
   <data name="txtFileName.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1021,7 +1051,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;txtFileName.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="lblFileName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1048,7 +1078,7 @@
     <value>pnlStatistics</value>
   </data>
   <data name="&gt;&gt;lblFileName.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="pnlStatistics.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -1057,7 +1087,7 @@
     <value>0, 0</value>
   </data>
   <data name="pnlStatistics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>483, 262</value>
+    <value>387, 282</value>
   </data>
   <data name="pnlStatistics.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1090,7 +1120,7 @@
     <value>1396, 477</value>
   </data>
   <data name="splitter.SplitterDistance" type="System.Int32, mscorlib">
-    <value>909</value>
+    <value>1005</value>
   </data>
   <data name="splitter.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
